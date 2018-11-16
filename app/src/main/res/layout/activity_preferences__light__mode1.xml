@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Preferences_Light_Mode1Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginRight="28.8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Preferences"
+                android:letterSpacing="0.0625"
+                android:textColor="#2e2f41"
+                android:textSize="27.5sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40.5dp"
+                android:background="#332e2f41" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40.4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Categories"
+                    android:textColor="#2e2f41"
+                    android:letterSpacing="0.0425"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_right_black_24dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19.5dp"
+                android:paddingLeft="28.8dp"
+                android:clipToPadding="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginRight="28.8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:background="#332e2f41" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45.4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Favorites"
+                    android:letterSpacing="0.0425"
+                    android:textColor="#2e2f41"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_chevron_right_black_24dp"/>>
+            </LinearLayout>
+        </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="27.8dp"
+                android:clipToPadding="false"
+                android:layout_marginTop="19.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="28.8dp"
+            android:layout_marginRight="28.8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="45.5dp"
+                android:background="#332e2f41" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_triangle" />
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:letterSpacing="0.0425"
+
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#2e2f41"/>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_spinner"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_bell" />
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.0425"
+
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#2e2f41"/>
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button2"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_sun" />
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Darkmode"
+                    android:letterSpacing="0.0425"
+
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#2e2f41"/>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_button"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    app:sb_show_indicator="false"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.3dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_help_circle" />
+
+                <TextView
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Help &amp; Support"
+                    android:textSize="15sp"
+                    android:letterSpacing="0.0425"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#2e2f41"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
